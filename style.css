@@ -20,3 +20,8 @@ body {
 .divider {
   flex-basis: 2%;
 }
+
+#cookie {
+  height: 100px;
+  width: 100px;
+}

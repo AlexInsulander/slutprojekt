@@ -12,7 +12,6 @@
       rel="stylesheet"
     />
     <script
-      src="cookie.js"
       src="https://kit.fontawesome.com/47f4bdeced.js"
       crossorigin="anonymous"
     ></script>
@@ -24,8 +23,19 @@
 
     <div class="main left"></div>
     <div class="divider"></div>
-    <main class="main middle"></main>
+    <main class="main middle">
+      <div>
+        <p>Score: <span id="cookies">0</span></p>
+      </div>
+      <div class="cookie">
+        <img id="cookie" src="cookie.png" onclick="addToCookies(1)" />
+        <button onclick="buyCursor()">
+          Cursor [<span id="cursor.cost">10</span>]
+        </button>
+      </div>
+    </main>
     <div class="divider"></div>
     <div class="main right"></div>
+    <script src="cookie.js"></script>
   </body>
 </html>

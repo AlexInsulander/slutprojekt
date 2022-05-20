@@ -655,7 +655,7 @@ setInterval(function () {
 function htmlAddItem(i) {
   let itemHtml = `
     <button class="item" id="${allItems[i].name}" onclick="buyItem(${allItems[i].name})">
-      <img class="item-image" src="${allItems[i].upgrades[1].img}" alt="${allItems[i].name}">
+      <img class="item-image" src="${allItems[i].upgrades[1].img}" alt="${allItems[i].name}-item">
       <div class="item-cost">
         <p class="item-title">${allItems[i].name}</p>
         <div class="item-cookies">
@@ -676,7 +676,8 @@ function htmlAddUpgrade(upgrade) {
   })">
     <div class="x2">
       <img class="upgrade-image" src="${upgrade.img}" alt="${
-    upgrade.itemName}-upgrade"><p id="x2">x 2</p>
+    upgrade.itemName
+  }-upgrade"><p id="x2">x 2</p>
     </div>
     <div class="upgrade-cost">
       ${convertToMillion(upgrade.cost)}

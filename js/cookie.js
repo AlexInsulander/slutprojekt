@@ -676,8 +676,7 @@ function htmlAddUpgrade(upgrade) {
   })">
     <div class="x2">
       <img class="upgrade-image" src="${upgrade.img}" alt="${
-    upgrade.description
-  }"><p id="x2">x 2</p>
+    upgrade.itemName}-upgrade"><p id="x2">x 2</p>
     </div>
     <div class="upgrade-cost">
       ${convertToMillion(upgrade.cost)}

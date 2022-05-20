@@ -122,6 +122,7 @@ table, th, td {
   padding:5px;
   color: white;
   text-align: center;
+  user-select: none;
 }
 
 .date, thead {
@@ -232,6 +233,7 @@ table, th, td {
   background-image: url("/images/storeTile.jpg");
   background-size: 100% 400%;
   display: flex;
+  user-select: none;
 }
 
 .item:hover{

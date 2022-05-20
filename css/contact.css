@@ -122,3 +122,11 @@ input[type=text], select, textarea {
   margin-left: 10%;
   margin-right: 10%;
 }
+
+.log-in {
+  min-width: 100px;
+}
+
+.contact-us {
+  min-width: 150px;
+}

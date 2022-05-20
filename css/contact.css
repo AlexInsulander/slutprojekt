@@ -60,17 +60,23 @@ p {
   }
   
 nav a {
-    font-family: "IBM Plex Sans", sans-serif;
-    color: white;
-    text-decoration: none;
-    height: 100%;
-  }
+  font-family: "IBM Plex Sans", sans-serif;
+  color: white;
+  text-decoration: none;
+  height: 100%;
+}
 
 .menu-item-logo {
     height: 100%;
     margin-left: 20px;
   }
 
+.menu-right {
+    margin-left: auto;
+    display: flex;
+    flex: 0;
+    align-items: center;
+  }
 
 .logo {
     height: 90%;
@@ -111,4 +117,6 @@ input[type=text], select, textarea {
 .form {
   color: white;
   margin-top: 50px;
+  margin-left: 10%;
+  margin-right: 10%;
 }

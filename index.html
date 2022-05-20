@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="/css/style.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/47f4bdeced.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500&family=Koulen&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Cookie clicker</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav>
+        <div class="title">
+          <ul class="menu menu-left">
+            <a href="index.html"
+              ><li class="menu-item-logo">
+                <img class="logo" src="/images/cookie2.png" /></li
+            ></a>
+            <a href="index.html"
+              ><li class="menu-item name">Cookie clicker</li></a
+            >
+          </ul>
+          <ul class="menu menu-right">
+            <a class="button" href="contact.html"
+              ><li class="menu-item push-right contact-us">
+                &nbsp&nbsp contact-us
+              </li></a
+            >
+            <a class="button" href="login.html"
+              ><li class="menu-item push-right log-in">
+                <i class="fas fa-user-circle"></i>&nbsp&nbspLog in
+              </li></a
+            >
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="game">
+      <section class="main middle">
+        <div class="version-history">
+          <table>
+            <thead>
+              <tr>
+                <th colspan="5">Version history</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="version">
+                <th>Version</th>
+                <td>v.0.1</td>
+                <td>v.0.2</td>
+                <td>v.0.3</td>
+                <td onclick="addToCookies(999999999999)">v.1</td>
+              </tr>
+              <tr class="date">
+                <th>Date</th>
+                <td>18/3</td>
+                <td>22/4</td>
+                <td>6/5</td>
+                <td>20/5</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="cookie-main">
+          <div id="banner">
+            <h1 class="cookies"><span id="cookies">0</span>&nbspcookies</h1>
+            <h2 class="cps">per second: <span id="cps">0</span></h2>
+          </div>
+          <div class="cookie">
+            <img
+              id="cookie"
+              src="/images/cookie2.png"
+              onclick="addToCookies(1)"
+            />
+          </div>
+        </div>
+      </section>
+      <div class="divider"></div>
+      <section class="main right">
+        <div class="store"><h1 id="store">Store</h1></div>
+        <div class="horizontal-divider">&nbsp&nbsp&nbspUpgrades</div>
+        <div id="upgradeList"></div>
+        <div class="horizontal-divider"></div>
+
+        <li id="itemList">
+          <button class="item" id="cursor" onclick="buyItem(cursor)">
+            <img class="item-image" src="images/cursor.png" />
+            <div class="item-cost">
+              <p class="item-title">cursor</p>
+              <div class="item-cookies">
+                <span class="cost" id="cursor-cost">15</span>
+              </div>
+            </div>
+            <div class="grow"></div>
+            <span class="amount" id="cursor-amount">0</span>
+          </button>
+
+          <button class="item" id="grandma" onclick="buyItem(grandma)">
+            <img class="item-image" src="images/grandma.png" />
+            <div class="item-cost">
+              <p class="item-title">grandma</p>
+              <div class="item-cookies">
+                <span class="cost" id="grandma-cost">100</span>
+              </div>
+            </div>
+            <div class="grow"></div>
+            <span class="amount" id="grandma-amount">0</span>
+          </button>
+        </li>
+      </section>
+      <script src="/js/cookie.js"></script>
+    </main>
+  </body>
+</html>

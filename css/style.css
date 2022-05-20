@@ -1,0 +1,408 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+
+.game{
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+
+.main {
+  width: 32%;
+  height: 100%;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+}
+
+nav a {
+  font-family: "IBM Plex Sans", sans-serif;
+  color: white;
+  text-decoration: none;
+  height: 100%;
+}
+
+.menu-item-logo {
+  height: 100%;
+  margin-left: 5px;
+}
+
+.logo {
+  height: 100%;
+}
+
+.header{
+  height: 8%;
+  flex-basis: 100%;
+
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  flex: 100%;
+  height: 100%;
+  background-color: black;
+  align-items: center;
+
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+}
+
+.menu-item {
+  font-family: 'Bebas Neue', cursive;
+  font-family: 'Oswald', sans-serif;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
+  color: white;
+  text-decoration: none;
+  height: 100%;
+  display: flex;
+  flex: 0;
+  align-items: center;
+  justify-content: center;
+}
+
+.log-in {
+  min-width: 100px;
+}
+
+.contact-us {
+  min-width: 150px;
+}
+
+.button:hover {
+  border-bottom: 3px solid #5e3d00;
+  box-sizing: border-box;
+}
+
+.middle{
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  background-image: url("/images/background.jpg");
+  background-position: center top;
+  background-size: 100% 100%;
+
+}
+
+.version-history {
+  padding:5px;
+  margin-bottom: 5%;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+table, th, td {
+  border: 1px solid black;
+  padding:5px;
+  color: white;
+  text-align: center;
+}
+
+.date, thead {
+  background-color: #573100;
+}
+
+.version {
+  background-color: #303030;
+}
+
+.menu-right {
+  margin-left: auto;
+  display: flex;
+  flex: 0;
+  align-items: center;
+}
+
+.divider {
+  flex-grow: 1;
+  width: 1%;
+  background-image: url("/images/woodbeam-v.png");
+  background-size: 100% 100%;
+  border: black solid 1px;
+  min-width: 15px;
+}
+
+.cookie-main{
+  justify-content: center;
+  flex-wrap: wrap;
+  display: flex;
+
+}
+
+#banner{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.cookies{
+  display: flex;
+  justify-content: center;
+  flex-basis: 100%;
+  color: white
+}
+
+.cps{
+  color: white;
+}
+
+.cookie{
+  display: flex;
+  justify-content: center;
+}
+
+#cookie {
+  height: 100%;
+  width: 100%;
+  transition: transform 0.1s ease;
+}
+
+#cookie:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+#cookie:active {
+  -webkit-transform: scale(0.9);
+  transform: scale(0.9);
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  width: 38%;
+  background-image: url("/images/background.jpg");
+  background-position: center top;
+  background-size: 100% 100%;
+}
+
+#itemList {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.item:nth-child(4n-3){
+  background-position: 0px 0%;
+}
+
+.item:nth-child(4n-2){
+  background-position: 0px 33%
+}
+
+.item:nth-child(4n-1){
+  background-position: 0px 67%
+}
+
+.item:nth-child(4n){
+  background-position: 0px 100%
+}
+
+.item{
+  height: 11.05%;
+  background-image: url("/images/storeTile.jpg");
+  background-size: 100% 400%;
+  display: flex;
+}
+
+.item:hover{
+  filter: brightness(85%)
+}
+
+.item-image{
+  height: 100%;
+}
+
+.item-cost{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+.item-title{
+  font-size: 3vh;
+  margin-top: 1%;
+  text-align: left;
+}
+
+.item-tiny-cookie{
+  height: 60%;
+}
+
+.item-cookies{
+  text-align: left;
+ height: 50%;
+}
+
+.cost{
+  font-size: 3vh;
+  height: 100%;
+}
+
+.amount{
+  height: 100%;
+  color: white;
+  font-size: 5vh;
+  margin-right: 3%;
+  margin-top: 1%;
+}
+
+
+.grow{
+  flex-grow: 1;
+}
+
+
+#upgradeList {
+  display: flex;
+  flex-wrap: wrap;
+  height: 30%;
+  overflow:auto;
+}
+
+.upgrade {
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 0;
+  padding: 3%;
+  width: 14%;
+  height: 52%;
+  justify-content: center;
+  background-image: url(/images/upgradeFrame.png);
+  background-position: center top;
+  background-size: 100% 100%;
+
+}
+
+.upgrade-cost{
+  width: 100%;
+  height: 40%;
+  flex-basis: 100%;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.upgrade-image{
+  height: 90%;
+}
+
+.horizontal-divider{
+  height: 5%;
+  background-image: url("/images/woodbeam-h.png");
+  border: black solid 1px;
+  color: white;
+  font-size: 3vh;
+}
+
+.x2{
+  color: white;
+  display: flex;
+  height: 60%;
+  font-size: 80%;
+}
+
+.store {
+  display: flex;
+  justify-content: center;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-family: 'Koulen', cursive;
+}
+
+#store{
+  color: white;
+}
+
+#hidden {
+  visibility: hidden;
+}
+
+.tiny-cookie{
+  height: 40%
+}
+
+
+
+@media screen and (max-width: 1300px) {
+  .upgrade {
+    width: 19%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .upgrade {
+    width: 27.3%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .upgrade {
+    width: 44%;
+  }
+}
+
+
+@media screen and (max-width: 500px) {
+  .game {
+    flex-wrap: wrap;
+  }
+
+  .main {
+    flex-grow: 1;
+  }
+
+  .divider {
+    display: none;
+  }
+
+  .right {
+    min-width: none;
+  }
+
+  .upgrade {
+    width: 44%;
+  }
+
+  .middle {
+    flex-basis: 100%;
+  }
+
+  body {
+    overflow: auto;
+    overflow-x: hidden;
+  }
+
+  .name {
+    display: none;
+  }
+}

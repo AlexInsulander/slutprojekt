@@ -1,0 +1,114 @@
+* {
+    padding: 0;
+    margin: 0;
+  }
+
+body, html {
+    height: 100%;
+}
+
+main {
+    background-image: url(/images/background.jpg);
+    height: 100%;
+    background-size: 100% 100%;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+  }
+  
+.title {
+    display: flex;
+    justify-content: center;
+    flex: 100%;
+    height: 60px;
+    background-color: black;
+    align-items: center;
+  
+  }
+  
+.menu {
+    list-style: none;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+  }
+  
+.menu-item {
+    font-family: 'Bebas Neue', cursive;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+    text-decoration: none;
+    height: 100%;
+    display: flex;
+    flex: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+p {
+    font-family: "IBM Plex Sans", sans-serif;
+  }
+  
+nav a {
+    font-family: "IBM Plex Sans", sans-serif;
+    color: white;
+    text-decoration: none;
+    height: 100%;
+  }
+
+.menu-item-logo {
+    height: 100%;
+    margin-left: 20px;
+  }
+
+
+.logo {
+    height: 90%;
+  }
+
+
+#subject {
+    height: 100px
+}
+
+input[type=text], select, textarea {
+  width: 100%; 
+  padding: 12px; 
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+  box-sizing: border-box; 
+  margin-top: 6px;
+  margin-bottom: 16px; 
+  resize: none
+}
+  
+
+.submit{
+  background-color: #5e3d00;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+}
+  
+
+.submit:hover {
+  background-color: #573100;
+}
+
+.form {
+  color: white;
+  margin-top: 50px;
+}
